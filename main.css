@@ -1,0 +1,293 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+header {  
+    background-color: white;  
+    position: fixed;  
+    top: 0;  
+    z-index: 2;  
+    width: 70%;  
+}
+
+.continer{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+/*navigation bar_______________________________________________*/
+.Bar_Menu{
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.Language{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.Language_Select{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+.Language_Select_Region{
+    
+    color: black;
+    font-size: 80%;
+    font-weight: 800;
+}
+.Language_Select_Lenguage{
+    color: #000;
+    font-size: 70%;
+}
+.Menu_Button{
+
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Menu_Button_Link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.Menu_Button_Text{
+    font-size: 1.4vh;
+}
+
+.Search_Field{
+    width: 75vh;
+    height: 4vh;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 28px;
+}
+/*main content____________________________________________________*/
+main{
+    margin-top: 9vh;
+    display: flex;
+    min-height: calc(100vh - 75px);
+    flex: 1;
+    }
+
+aside{
+    flex: 1;
+}
+
+.Product_Cart{
+    flex: 3;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    width: 250px;
+}
+
+.Category_Item{
+    color: black;
+    background-color: transparent;
+    font-size: 1em;
+    width: 200px;
+    height: 100%;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+
+.Category_Item:visited{
+    color: black;
+}
+
+.Category_Item:hover{
+  background-color: #e6ffff;
+}
+
+#cate{
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/*Product cart style______________________________________*/
+.Product_Cart{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Product_Item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 350px;
+    border: 1px solid #b3b0b0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.Product_Link{
+    color: black;
+    margin-bottom: 15px;
+}
+
+.Product_Image{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+.Product_Name{
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    height: 35px;
+    max-height: 35px;
+    overflow: hidden;
+    vertical-align: middle;
+    font-size: 1em;
+}
+
+.Product_Bought{
+    font-size: 1.5vh;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Product_Price{
+    font-size: 2vh;
+    font-weight: bold;
+}
+/*foother content___________________________________________*/
+.Shower{
+    color: black;
+    text-align: center;
+    font-size: 2vh;
+    font-weight: bold;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 28px;
+}
+
+.Shower:hover{
+    background-color: rgb(190, 211, 228);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;    
+    bottom: 0; 
+    width: 70%;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+/*-----------login Window ------------------------*/
+.regWindow{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    z-index: 3;
+    transform: translateY(-44.5%) scale(0);
+    transition: .4s ease-in-out;
+}
+.regWindow.active{
+    transform: translateY(0%) scale(100%);
+    background-color: rgba(0, 0,0, 0.8);
+}
+.regWindowContiner{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.regWindowBody{
+    position: relative;
+    margin: auto;
+    width: 500px;
+    background-color: #ffffff;
+    border-radius: 18px;
+    text-align: center;
+    padding:100px 10px 118px 10px;
+    color: black;
+}
+.regWindowBody form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.regWindowBody input{
+    display: block;
+    width: 50%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    font-size: 18px;
+}
+.regWindowBody input:focus{
+    outline: none;
+}
+.regWindowBody button{
+    padding: 5px 5px;
+    width: 50%;
+    height: 40px;
+    margin-top: 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.regWindowClose{
+    position: absolute;
+    left: 92%;
+    top:4%;
+    cursor: pointer;
+}
